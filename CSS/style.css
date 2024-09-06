@@ -14,19 +14,27 @@
 }
 
 /* -----------------------
-          tags
+        Generals
 -------------------------*/
 body{
-   background-color: ; /*TODO due colori*/
+   background-color: lightblue; /*! ritocare con due colori*/
 }
 
 main{
     height: 90vh;
     width: 100%;
-    margin-bottom: 50px;
     display: flex;
-    align-items: center;
 }
+
+header{
+    height: 15%;
+    background-color: #EAEAEA;
+    
+}
+
+/*---------------------------
+        Section - Left
+----------------------------*/
 
 #section-left{
    height: 100%;
@@ -34,6 +42,13 @@ main{
    background-color: white;
 }
 
+
+
+
+
+/*---------------------------
+        Section - Rigth
+----------------------------*/
 #section-rigth{
     height: 100%;
     flex-basis: 70%;
