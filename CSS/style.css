@@ -43,6 +43,17 @@ header{
    background-color: white;
 }
 
+#left-top{
+    height: 10%;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+}
+
+#notifications {
+  
+}
+
 
 /*---------------------------
         Section - Rigth
