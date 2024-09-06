@@ -13,6 +13,10 @@
     border: 2px dashed darkred;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* -----------------------
         Generals
 -------------------------*/
@@ -48,6 +52,17 @@ header{
     background-color: #EAEAEA;
     display: flex;
     justify-content: space-between;
+}
+
+#profile{
+   display: flex;
+   align-items: center;
+   margin-left: 5px;
+}
+
+#profile img{
+    border-radius: 50%;
+    width: 15%;
 }
 
 #notifications {
