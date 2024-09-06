@@ -4,12 +4,7 @@
     box-sizing: border-box;
 }
 
-.container{
-   max-width: 1000px;
-   margin: 0 auto;
-}
-
-.border{
+.borderCor{
     border: 2px dashed darkred;
 }
 
@@ -22,12 +17,13 @@ img{
 -------------------------*/
 body{
    background-color: #DCDBD2; /*! ritocare con due colori*/
+   
 }
 
 main{
     height: 90vh;
     width: 100%;
-    display: flex;
+    margin-top: 30px;
 }
 
 header{
@@ -35,6 +31,15 @@ header{
     background-color: #EAEAEA;
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
+}
+
+i{
+    color: #B1B1B1;
+}
+
+h3{
+    font-size: 0.7em;
 }
 
 /*---------------------------
@@ -50,33 +55,35 @@ header{
 #left-top{
     height: 10%;
     background-color: #EAEAEA;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
 }
 
-#profile{
-   display: flex;
-   align-items: center;
-   margin-left: 5px;
-}
 
 #profile img{
     border-radius: 50%;
-    width: 15%;
+    width: 18%;
 }
 
 #notifications {
+  background-color: #8EDAFC;
+  height: 60px;
+  padding: 5px;
   
 }
 
-
+.fa-bell-slash{
+  border-radius: 50%;
+  color: white;
+}
 /*---------------------------
         Section - Rigth
 ----------------------------*/
 #content-rigth{
     height: 100%;
     flex-basis: 70%;
-    background-color: #E4DCD4;
+    background-image: url('img/mine.png');
  }
 
 
