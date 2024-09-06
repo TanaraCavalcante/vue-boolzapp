@@ -17,15 +17,31 @@
           tags
 -------------------------*/
 body{
-   
+   background-color: ; /*TODO due colori*/
 }
 
 main{
     height: 90vh;
     width: 100%;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
-    
 }
+
+#section-left{
+   height: 100%;
+   flex-basis: 30%;
+   background-color: white;
+}
+
+#section-rigth{
+    height: 100%;
+    flex-basis: 70%;
+    background-color: #E4DCD4;
+ }
+
+
+
+
+
 
