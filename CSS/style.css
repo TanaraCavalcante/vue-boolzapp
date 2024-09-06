@@ -29,7 +29,8 @@ main{
 header{
     height: 10%;
     background-color: #EAEAEA;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 /*---------------------------
