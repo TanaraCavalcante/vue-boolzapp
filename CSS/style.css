@@ -17,7 +17,7 @@
         Generals
 -------------------------*/
 body{
-   background-color: lightblue; /*! ritocare con due colori*/
+   background-color: #DCDBD2; /*! ritocare con due colori*/
 }
 
 main{
@@ -27,7 +27,7 @@ main{
 }
 
 header{
-    height: 15%;
+    height: 10%;
     background-color: #EAEAEA;
     
 }
@@ -36,20 +36,17 @@ header{
         Section - Left
 ----------------------------*/
 
-#section-left{
+#content-left{
    height: 100%;
    flex-basis: 30%;
    background-color: white;
 }
 
 
-
-
-
 /*---------------------------
         Section - Rigth
 ----------------------------*/
-#section-rigth{
+#content-rigth{
     height: 100%;
     flex-basis: 70%;
     background-color: #E4DCD4;
