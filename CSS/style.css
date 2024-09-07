@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0, auto;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -10,6 +10,7 @@
 
 img{
     max-width: 100%;
+    border-radius: 50%;
 }
 
 /* -----------------------
@@ -22,16 +23,12 @@ body{
 
 main{
     height: 90vh;
-    width: 100%;
     margin-top: 30px;
 }
 
 header{
     height: 10%;
     background-color: #EAEAEA;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
 }
 
 i{
@@ -40,7 +37,13 @@ i{
 
 h3{
     font-size: 0.7em;
+    
 }
+
+p{
+    font-size: 10px;
+}
+
 
 /*---------------------------
         Section - Left
@@ -56,27 +59,29 @@ h3{
     height: 10%;
     background-color: #EAEAEA;
     padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
 }
 
 
 #profile img{
-    border-radius: 50%;
     width: 18%;
 }
 
 #notifications {
   background-color: #8EDAFC;
   height: 60px;
-  padding: 5px;
-  
+  padding: 10px;
 }
 
 .fa-bell-slash{
   border-radius: 50%;
   color: white;
 }
+
+#ricerca-chat input{
+        font-size: 10px;
+        width: 90%;
+    }
+
 /*---------------------------
         Section - Rigth
 ----------------------------*/
@@ -84,6 +89,16 @@ h3{
     height: 100%;
     flex-basis: 70%;
     background-image: url('img/mine.png');
+ }
+
+ header img{
+    width: 10%;
+ }
+
+ #conversation-profile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
  }
 
 

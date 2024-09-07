@@ -17,36 +17,46 @@
     <!--Blocco centrale con due sessione-->
     <main class="container borderCor d-flex">
         <div id="content-left">
-           <div id="left-top"> <!--Header left--> 
-                <div id="profile" class="d-flex align-items-center">
+           <div id="left-top" class="d-flex align-items-center"> <!--Header left--> 
+                <div id="profile" >
                     <img src="img/avatar_io.png" alt="profile-photo">
                     <span>Sofia</span>
                 </div>
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex gap-2">
                     <i class="fa-solid fa-circle-notch"></i>
                     <i class="fa-solid fa-message"></i>
                     <i class="fa-solid fa-ellipsis-vertical "></i>
                 </div>
             </div>
            <section>
-                <div id="notifications"  class="borderCor d-flex align-items-center" >
+                <div id="notifications"  class="d-flex align-items-center" >
                     <i class="fa-regular fa-bell-slash"></i>
-                    <div >
-                        <h3>Riccevi notifiche di nuovi messaggi</h3>
-                        <p></p>
+                    <div>
+                        <h3 class="mb-0 mt-3">Riccevi notifiche di nuovi messaggi</h3>
+                        <p class="text-decoration-underline">Ativa notifica desktop</p>
                     </div>
                 </div>
-                <div></div>
-                <div></div>
+                <div id="ricerca-chat" class="container py-2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                </div>
+                <div id="contacts-chat">
+
+                </div>
            </section>
         </div>
         <div id="content-rigth">
-           <header class="container">
-                <div>
-                    <img src="" alt="">
-                    <span></span>
+           <header class="d-flex align-items-center">
+               <!--left-->
+                <div id="conversation-profile">
+                    <img src="img/avatar_1.png" alt="avatar 1">
+                    <div>
+                        <h3 class="mb-0 mt-3">Michele</h3>
+                        <p>Ultimo acesso oggi alle 12:00</p>
+                    </div>
                 </div>
-                <div class="d-flex align-items-center gap-2">
+                <!--right-->
+                <div class="d-flex gap-2">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-paperclip"></i>
                     <i class="fa-solid fa-ellipsis-vertical "></i>
