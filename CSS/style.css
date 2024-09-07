@@ -8,6 +8,11 @@
     border: 2px dashed darkred;
 }
 
+.container-css{
+    max-width: 960px;
+    margin: 30px auto;
+}
+
 img{
     max-width: 100%;
     border-radius: 50%;
@@ -37,11 +42,16 @@ i{
 
 h3{
     font-size: 0.7em;
+    margin-bottom: 0;
     
 }
 
 p{
     font-size: 10px;
+}
+
+ul{
+    list-style-type: none;
 }
 
 
@@ -63,7 +73,7 @@ p{
 
 
 #profile img{
-    width: 18%;
+    width: 20%;
 }
 
 #notifications {
@@ -80,7 +90,11 @@ p{
 #ricerca-chat input{
         font-size: 10px;
         width: 90%;
-    }
+}
+
+#contacts-chat{
+    overflow: auto;
+}
 
 /*---------------------------
         Section - Rigth
@@ -100,6 +114,17 @@ p{
     align-items: center;
     justify-content: start;
  }
+
+ #conversation-chat{
+   overflow: auto;
+ }
+
+ footer{
+    height: 60px;
+}
+
+
+
 
 
 
