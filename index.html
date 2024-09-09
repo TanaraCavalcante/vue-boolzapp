@@ -78,12 +78,11 @@
             </header>
             <!--sessão com barra-->
             <section id="conversation">
-                <ul><!--V-for messages-->
-                    <li :class="contacts[0].messages[0].status" > <!--indicare la class con "STATUS" del JS-->
-                        <span>{{ contacts[0].messages[0].message}}</span>
-                        <p>{{ contacts[0].messages[0].date}}</p>
+                <ul  v-for="message in contacts[activeContact].messages"><!--V-for messages-->
+                    <li :class="message.status" > <!--indicare la class con "STATUS" del JS-->
+                        <span>{{ message.message}}</span>
+                        <p>{{ message.date}}</p>
                     </li>
-                    
                 </ul>
             </section>
             <footer>

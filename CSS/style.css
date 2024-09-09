@@ -85,9 +85,6 @@ p{
     font-size: 10px;
 }
 
-li span {
-    font-size: 12px;
-}
 
 /*!---------------------------
 /*!        LEFT CONTENT
@@ -145,7 +142,7 @@ li span {
     height: 60px;
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 0px 5px;
 }
 
 #contact-card:hover{
@@ -179,16 +176,26 @@ header img{
     width: 9%;
  }
 
+
 #conversation ul{
     list-style-type: none;
 }
 
 #conversation li{
     margin: 10px;
-    padding: 5px 10px;
+    padding: 5px ;
     display: flex;
     flex-direction: column; 
     border-radius: 10px;
+}
+
+li span {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+li p{
+    margin-bottom: 2px;
 }
 
 .sent{
