@@ -78,15 +78,12 @@
             </header>
             <!--sessão com barra-->
             <section id="conversation">
-                <ul>
-                    <li class="sent" > <!--indicare la class con "STATUS" del JS-->
-                        <span >No, l\'ho già mangiata ieri, ordiniamo sushi!</span>
-                        <p>ora</p>
+                <ul><!--V-for messages-->
+                    <li :class="contacts[0].messages[0].status" > <!--indicare la class con "STATUS" del JS-->
+                        <span>{{ contacts[0].messages[0].message}}</span>
+                        <p>{{ contacts[0].messages[0].date}}</p>
                     </li>
-                    <li class="received">
-                        <span>OK!</span>
-                        <p>ora</p>
-                    </li>
+                    
                 </ul>
             </section>
             <footer>

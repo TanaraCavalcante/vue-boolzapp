@@ -172,7 +172,7 @@ createApp({
     },
     mounted() {
         // Esegui il console.log dopo il montaggio
-        console.log(this.contacts[0].messages[this.contacts[0].messages.length - 1].date);
+        console.log(this.contacts[0].messages[1].message);
     }
 }).mount('#app')
 
