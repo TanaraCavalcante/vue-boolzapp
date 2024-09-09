@@ -1,34 +1,37 @@
 *{
+    margin: 0;
     padding: 0;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
-.borderCor{
-    border: 2px dashed darkred;
-}
-
-.container-css{
-    max-width: 960px;
+.container-box{
+    width: 960px;
     margin: 30px auto;
 }
 
-img{
-    max-width: 100%;
-    border-radius: 50%;
+.border-cor{
+    border: 2px dashed blue;
 }
 
-/* -----------------------
-        Generals
--------------------------*/
+.border-cor2{
+    border: 2px dashed darkgreen;
+}
+
+.border-cor3{
+    border: 2px dashed black;
+}
+
+
+/*!---------------------------
+/*!      GENERAL CONTENT
+/*!-------------------------*/
 body{
-   background-color: #DCDBD2; /*! ritocare con due colori*/
-   
+    height: 100vh;
+    background-image: linear-gradient(#009688 15%, #DBDBD2 15%);
 }
 
 main{
     height: 90vh;
-    margin-top: 30px;
 }
 
 header{
@@ -36,98 +39,94 @@ header{
     background-color: #EAEAEA;
 }
 
+footer{
+    height: 8%;
+}
+
+/*---------------------------
+        GENERIC-TAGS
+----------------------------*/
+img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
 i{
     color: #B1B1B1;
+    padding: 5px;
+}
+
+h2{
+    font-size: 0.7em;
+    margin-bottom: 0; 
+    margin-top: 10px;
 }
 
 h3{
     font-size: 0.7em;
-    margin-bottom: 0;
-    
+    margin-bottom: 0; 
 }
 
 p{
     font-size: 10px;
 }
 
-ul{
-    list-style-type: none;
+/*!---------------------------
+/*!        LEFT CONTENT
+/*!-------------------------*/
+#left-box{
+    height: 100%;
+    flex-basis: 30%;
 }
 
-
-/*---------------------------
-        Section - Left
-----------------------------*/
-
-#content-left{
-   height: 100%;
-   flex-basis: 30%;
-   background-color: white;
+#top-left{
+   height: 10%;
+   background-color: #EAEAEA;
 }
 
-#left-top{
-    height: 10%;
-    background-color: #EAEAEA;
-    padding: 0 10px;
+#notifications{
+    height: 13%;
+    background-color: #8EDAFC;
 }
 
+#search{
+    height: 7%;
+}
 
+#contacts-chat{          /*TODO  local com barra  */
+    overflow: auto;
+    height: 70%;
+    background-color: aquamarine;
+}
+/*------------------------------
+        CONTENT-LEFT SECTION
+-------------------------------*/
 #profile img{
     width: 20%;
 }
 
-#notifications {
-  background-color: #8EDAFC;
-  height: 60px;
-  padding: 10px;
+#search input{
+    font-size: 10px;
+    width: 80%;
 }
 
-.fa-bell-slash{
-  border-radius: 50%;
-  color: white;
-}
-
-#ricerca-chat input{
-        font-size: 10px;
-        width: 90%;
-}
-
-#contacts-chat{
-    overflow: auto;
-}
-
-/*---------------------------
-        Section - Rigth
-----------------------------*/
-#content-rigth{
+/*!---------------------------
+/*!        RIGTH CONTENT
+/*!-------------------------*/
+#rigth-box{
     height: 100%;
     flex-basis: 70%;
-    background-image: url('img/mine.png');
- }
-
- header img{
-    width: 10%;
- }
-
- #conversation-profile {
-    display: flex;
-    align-items: center;
-    justify-content: start;
- }
-
- #conversation-chat{
-   overflow: auto;
- }
-
- footer{
-    height: 60px;
 }
 
+#conversation{             /*TODO local com barra*/
+    overflow: auto;
+    height: 82%;
+    background-image: url('img/mine.png');
+}
 
-
-
-
-
-
-
-
+/*------------------------------
+      CONTENT-RIGTH SECTION
+-------------------------------*/
+header img{
+    width: 9%;
+ }
