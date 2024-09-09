@@ -137,6 +137,23 @@ p{
     left: 10px;
 }
 
+#contact-card{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#contact-card :hover{
+   background-color: #F3EEEA;
+   cursor: pointer;
+}
+
+
+#contacts img{
+    width: 18%;
+}
+
 /*!---------------------------
 /*!        RIGTH CONTENT
 /*!-------------------------*/
