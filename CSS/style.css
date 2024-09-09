@@ -133,7 +133,7 @@ p{
 
 #search i{
     position: absolute;  /*TODO  position fuori scatolla */
-    top: 5px;
+    top: 8px;
     left: 10px;
 }
 
@@ -144,7 +144,7 @@ p{
     padding: 5px;
 }
 
-#contact-card :hover{
+#contact-card:hover{
    background-color: #F3EEEA;
    cursor: pointer;
 }

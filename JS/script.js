@@ -1,7 +1,5 @@
 const {createApp} = Vue;
 
-console.log(contacts[0].messages[messages.length - 1].date);
-
 createApp({
     data(){
         return{
@@ -22,7 +20,7 @@ createApp({
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2020 16:15:22',   // TODO vorrei questa informazione in console riga-3
+                            date: '10/01/2020 16:15:22', 
                             message: 'Tutto fatto!',     
                             status: 'received'
                         }
@@ -170,7 +168,11 @@ createApp({
             ]
             
         }
+        
+    },
+    mounted() {
+        // Esegui il console.log dopo il montaggio
+        console.log(this.contacts[0].messages[this.contacts[0].messages.length - 1].date);
     }
-
 }).mount('#app')
 
