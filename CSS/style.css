@@ -98,6 +98,8 @@ p{
     display: flex;
     align-items: center;
     padding: 10px;
+
+    position: relative;
 }
 
 #contacts-chat{         
@@ -116,7 +118,6 @@ p{
     font-size: 10px;
     width: 90%;
     padding-left: 30px;
-    position: relative;
 }
 
 #search i{
@@ -136,7 +137,7 @@ p{
 #conversation{             
     overflow: auto;
     height: 82%;
-    background-image: url('img/mine.png'); /*TODO sparitto*/
+    background-image: url('../img/mine.png'); /*TODO sparitto*/
 }
 
 /*------------------------------
