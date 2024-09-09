@@ -47,16 +47,16 @@
             </section>
             <!--sessão com barra-->
             <section id="contacts"> 
-                <div id="contact-card" v-for="(contact, i) in contacts"><!--V-for-->
+                <div id="contact-card" v-for="contact in contacts"> <!--V-for-->
                     <div class="d-flex align-items-center gap-2">
-                        <img :src="contact.avatar" alt="avatar_[i+1]">
+                        <img :src="contact.avatar" alt="avatar">
                         <div>
                             <h2>{{ contact.name }}</h2>
                             <p>Ultimo messagio inviato </p>
                         </div>
                     </div>
                     <p>
-                        {{ contact.messages.date }}
+                        <!--{{ contact.messages[messages.length - 1].date }}-->
                     </p>
                 </div>
             </section>
