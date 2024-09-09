@@ -41,6 +41,10 @@ header{
 
 footer{
     height: 8%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 /*---------------------------
@@ -91,6 +95,8 @@ p{
 
 #search{
     height: 7%;
+    display: flex;
+    align-items: center;
 }
 
 #contacts-chat{          /*TODO  local com barra  */
@@ -130,3 +136,7 @@ p{
 header img{
     width: 9%;
  }
+
+footer input{
+    width: 80%;
+}
