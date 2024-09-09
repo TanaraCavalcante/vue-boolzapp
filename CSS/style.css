@@ -104,6 +104,7 @@ p{
 
 #search{
     height: 7%;
+    background-color: #FAFAFA;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -114,7 +115,7 @@ p{
 #contacts{         
     overflow: auto;
     height: 70%;
-    background-color: aquamarine;
+    background-color: #FFFFFF;
 }
 /*------------------------------
         CONTENT-LEFT SECTION
