@@ -47,7 +47,7 @@
             </section>
             <!--sessão com barra-->
             <section id="contacts"> 
-                <div id="contact-card" v-for="contact in contacts"> <!--V-for-->
+                <div id="contact-card" v-for="contact in contacts" @click=""> <!--V-for-->
                     <div class="d-flex align-items-center gap-2">
                         <img :src="contact.avatar" alt="avatar">
                         <div>

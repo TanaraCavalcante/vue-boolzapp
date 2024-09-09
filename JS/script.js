@@ -3,6 +3,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
+            activeContact: 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -165,12 +166,19 @@ createApp({
                         }
                     ],
                 }
-            ],
-            activeContact :0,
-            
+            ],  
         }
         
     },
+
+    methods: {
+        changeContact() {
+            
+        },
+        
+       },
+
+
     mounted() {
         // Esegui il console.log dopo il montaggio
         console.log(this.contacts[0].messages[1].message);
