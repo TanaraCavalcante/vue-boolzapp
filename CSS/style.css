@@ -97,9 +97,10 @@ p{
     height: 7%;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
-#contacts-chat{          /*TODO  local com barra  */
+#contacts-chat{         
     overflow: auto;
     height: 70%;
     background-color: aquamarine;
@@ -113,7 +114,15 @@ p{
 
 #search input{
     font-size: 10px;
-    width: 80%;
+    width: 90%;
+    padding-left: 30px;
+    position: relative;
+}
+
+#search i{
+    position: absolute;  /*TODO  position fuori scatolla */
+    top: 5px;
+    left: 10px;
 }
 
 /*!---------------------------
@@ -124,10 +133,10 @@ p{
     flex-basis: 70%;
 }
 
-#conversation{             /*TODO local com barra*/
+#conversation{             
     overflow: auto;
     height: 82%;
-    background-image: url('img/mine.png');
+    background-image: url('img/mine.png'); /*TODO sparitto*/
 }
 
 /*------------------------------
