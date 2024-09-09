@@ -51,6 +51,7 @@ header{
 footer{
     height: 8%;
     padding: 10px;
+    background-color: #F3EEEA;
     display: flex;
     align-items: center;
     gap: 15px;
