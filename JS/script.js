@@ -4,11 +4,7 @@ createApp({
     data(){
         return{
             activeContact: 0,
-            newMessage: {           //preparare oggeto per nuova message scritta
-                date: null,
-                message: '',
-                status: 'sent',     //default visto che sarà sempre l'usuàario che lo scriverà!
-            },
+              
             contacts: [
                 {
                     name: 'Michele',
@@ -171,7 +167,8 @@ createApp({
                         }
                     ],
                 }
-            ],  
+            ], 
+            newMessageText: '', 
         }
         
     },
@@ -180,12 +177,21 @@ createApp({
         setActiveContact(index) {
             this.activeContact = index;
         },
+        sendMessage(){
+            const newMessage = {
+                date: new Date().toLocaleString(),
+                message: this.newMessageText,
+                status: 'sent',
+            }
+
+            this.contacts[activeContact].messages.push(this.newMessage);
+        }
        },
 
 
-    mounted() {
+    /*mounted() {
         // Esegui il console.log dopo il montaggio
         console.log(this.contacts[0].messages[1].message);
-    }
+    }*/
 }).mount('#app')
 
