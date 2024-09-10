@@ -186,7 +186,19 @@ createApp({
 
             this.contacts[this.activeContact].messages.push(newMessage),
 
-            this.newMessageText = '';
+            this.newMessageText = ''; 
+
+           //risposta del contatto
+            setTimeout(() => {
+                const newMessage = {
+                    date: new Date().toLocaleString(),
+                    message: 'Tutto bene! Grazie',
+                    status: 'received',
+                };
+                
+                this.contacts[this.activeContact].messages.push(newMessage);
+
+            },1000);
         }
        },
 

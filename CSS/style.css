@@ -134,7 +134,7 @@ p{
 }
 
 #search i{
-    position: absolute;  /*TODO  position fuori scatolla */
+    position: absolute; 
     top: 8px;
     left: 10px;
 }
@@ -167,7 +167,7 @@ p{
 #conversation{             
     overflow: auto;
     height: 82%;
-    background-image: url('../img/mine.png'); /*TODO sparitto*/
+    background-image: url('../img/mine.png'); 
 }
 
 /*------------------------------
@@ -183,11 +183,13 @@ header img{
 }
 
 #conversation li{
-    margin: 10px;
-    padding: 5px ;
+    padding: 5px;
     display: flex;
     flex-direction: column; 
     border-radius: 10px;
+    box-shadow: 1px 1px 5px gray;
+    
+    width: 45%;
 }
 
 li span {
@@ -202,10 +204,12 @@ li p{
 .sent{
     background-color: #D5F9BA;
     text-align: right;
+    margin: 10px 0 10px 320px;
 }
 
 .received{
     background-color: #FFFFFF;
+    margin: 10px;
 }
 
 footer input{
