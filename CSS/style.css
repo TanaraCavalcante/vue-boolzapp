@@ -29,6 +29,7 @@
 body{
     height: 100vh;
     background-image: linear-gradient(#009688 15%, #DBDBD2 15%);
+    
 
     position: relative;
 }

@@ -47,9 +47,9 @@
             </section>
             <!--sessão com barra-->
             <section id="contacts"> 
-                <div id="contact-card" v-for="contact in contacts" @click=""> <!--V-for-->
+                <div id="contact-card" v-for="(contact,i) in contacts" @click="setActiveContact(i)"> <!--V-for-->
                     <div class="d-flex align-items-center gap-2">
-                        <img :src="contact.avatar" alt="avatar">
+                        <img :src="contact.avatar" :alt="contact.name">
                         <div>
                             <h2> {{ contact.name }}</h2>
                             <p>Ultimo messagio inviato</p>
