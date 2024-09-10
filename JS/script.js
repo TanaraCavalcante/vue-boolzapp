@@ -175,7 +175,6 @@ createApp({
         setActiveContact(index) {
             this.activeContact = index;
         },
-        
        },
 
 

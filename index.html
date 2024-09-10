@@ -64,10 +64,10 @@
         <div id="rigth-box">
             <header class="p-1 d-flex align-items-center justify-content-between ">
                 <div class="d-flex align-items-center gap-2">
-                    <img :src="contacts[0].avatar" alt="avatar_1">
+                    <img :src="contacts[activeContact].avatar" alt="avatar_1">
                     <div>
-                        <h2>Michele</h2>
-                        <p>Ultimo acesso {{ contacts[0].messages[contacts[0].messages.length - 1].date }}</p>
+                        <h2>{{ contacts[activeContact].name }}</h2>
+                        <p>Ultimo acesso {{ contacts[activeContact].messages[contacts[activeContact].messages.length - 1].date }}</p>
                     </div>
                 </div>
                 <div>
