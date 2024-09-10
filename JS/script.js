@@ -184,7 +184,9 @@ createApp({
                 status: 'sent',
             }
 
-            this.contacts[this.activeContact].messages.push(this.newMessage);
+            this.contacts[this.activeContact].messages.push(newMessage),
+
+            this.newMessageText = '';
         }
        },
 
