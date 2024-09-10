@@ -4,6 +4,11 @@ createApp({
     data(){
         return{
             activeContact: 0,
+            newMessage: {           //preparare oggeto per nuova message scritta
+                date: null,
+                message: '',
+                status: 'sent',     //default visto che sarà sempre l'usuàario che lo scriverà!
+            },
             contacts: [
                 {
                     name: 'Michele',
